@@ -1,0 +1,16 @@
+from store import store
+from product import product
+costco = store('costco')
+reducedFat_milk = product(1, '2% milk', 5, 'dairy')
+cheese = product(2,'cheese', 10, "dairy")
+whole_milk = product(3,'whole milk', 5, 'dairy')
+cream = product(4,'cream', 8, 'dairy')
+butter = product(5,'butter', 12, "dairy")
+carrot = product(6,'carrots', 3, 'produce')
+apple = product(7,'apples', 2, 'produce')
+spinach = product(8,'spinach', 6, 'produce')
+costco.add_product(reducedFat_milk).add_product(cheese).add_product(whole_milk).add_product(cream).add_product(butter).add_product(carrot).add_product(apple).add_product(spinach)
+# costco.inflation(20)
+# costco.sell_product(carrot)
+# costco.set_clearance('dairy',25)
+costco.print_store()
